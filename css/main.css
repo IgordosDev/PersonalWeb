@@ -47,9 +47,7 @@ body {
     width: 32px;
 }
 
-h3,
-h4,
-p {
+h3,h4,p {
     font-size: 20px;
     line-height: 20px;
     padding-top: 0px;
@@ -59,15 +57,41 @@ details {
     padding: .5em .5em 0;
 }
 
+details summary::-webkit-details-marker {
+    display: none
+  }
+
+details > summary {
+    list-style: none;
+  }
+
+
+details summary:before {
+    content: '\f105';
+    font-family: "Font Awesome 5 free";
+    margin-right: 7px;
+  }
+  
+details[open] summary:before {
+    content: '\f103';
+  }
+
 summary {
     font-weight: bold;
     margin: -.5em -.5em 0;
     padding: .5em;
     position: relative;
     right: 10px;
-    bottom: 15px
+    bottom: 15px;
+    cursor: pointer;
 }
 
-summary {
-    cursor: pointer;
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
   }
