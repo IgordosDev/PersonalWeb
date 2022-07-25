@@ -20,9 +20,9 @@ body {
 .card {
     background-color: #D0F0C0;
     /* opacity: 50%; */
-    height: 235px;
+    height: 250px;
     width: 400px;
-    border-radius: 20px;
+    border-radius: 20px;    
 }
 
 .content {
@@ -92,6 +92,5 @@ summary {
     -khtml-user-select: none;    /* Konqueror */
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently
-                                    not supported by any browser */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
   }
