@@ -19,10 +19,9 @@ body {
 
 .card {
     background-color: #D0F0C0;
-    /* opacity: 50%; */
     height: 250px;
     width: 400px;
-    border-radius: 20px;    
+    border-radius: 20px;
 }
 
 .content {
