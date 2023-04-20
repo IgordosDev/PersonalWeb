@@ -1,21 +1,17 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script type="text/javascript" src="index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:title" content="Igordos">
-    <meta property="og:image" content="/img/user.png">
-    <meta property="og:description" content="R.I.P. ST.OK.">
-    <meta property="og:site_name" content="© 𝑅 🍬𝐹 𝐿">
-    <meta property="og:theme-color" content="#81AD81">
+    <meta property="og:title" content="Моя карточка">
+    <meta property="og:image" id="avatar" content="/img/user.png">
+    <meta property="og:description" content="Тут есть ссылки, что необходимо ещё?">
+    <meta property="og:site_name" content="© 𝑅 🍬𝐹 𝐿, I'mMails, Clyde, Igordos">
+    <meta property="og:theme-color" content="81AD81">
     <!-- Profile теги -->
     <meta property="profile:username" content="Igordos">
     <meta property="profile:gender" content="male">
@@ -23,38 +19,49 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="resource-type" content="Homepage">
     <meta http-equiv="content-language" content="ru">
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico"> -->
     <link rel="alternate" href="https://teletype.in/rss/igordos" type="application/xml" title="Блог (неактуально)">
     <title>Это я</title>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico"> -->
 </head>
 <body>
 <div class="card">
         <div class="content">
             <div class="up">
                 <!-- <script>document.write("<img class=\"avatar\" src=\"https://thisfursonadoesnotexist.com/v2/jpgs/seed" + Math.floor(Math.random() * (99999 - 10000 + 1) + 10000) + ".jpg\">")</script> -->
-                <script>document.write('<img class=\"avatar\" src=\"https://' + avatar.randElement() + '\">')</script>
+                <img class="avatar" alt="Аватар" id="avatar" src=''>
                 <p>
                    <!-- <a class="social" href="https://teletype.in/@igordos/"><i class="fa fa-rss"></i></a> -->
-                    <a href="https://openvk.su/pepega"><img style="width: 20px; height: 20px; filter: invert(100%);" src="https://raw.githubusercontent.com/openvk/openvk/master/Web/static/img/logo.svg"></a>
-                    <a class="social" href="https://www.youtube.com/c/Igordos"><i class="fab fa-youtube"></i></a>
+                   <a href="https://openvk.su/pepega"><img class="up-link" alt="openvk" src="https://raw.githubusercontent.com/openvk/openvk/master/Web/static/img/logo.svg"></a>
+                   <a class="social" href="https://www.youtube.com/c/Igordos"><i class="fab fa-youtube"></i></a>
                    <!-- <a class="social" href="https://twitch.tv/igordosdev"><i class="fab fa-twitch"></i></a> -->
                     <a class="social" href="https://last.fm/ru/user/Igordos"><i class="fab fa-lastfm"></i></a>
                     <!-- <a class="social" href="https://www.guilded.gg/i/2OORrmX2"><i class="fab fa-guilded"></i></a> -->
                     <a class="social" href="https://discord.gg/q8PUGZQazT"><i class="fab fa-discord"></i></a>
                     <a class="social" href="mailto:igordos@vivaldi.net"><i class="fas fa-envelope"></i></a>
-                    <a class="social" href="https://github.com/IgordosDev/PersonalWeb"><i class="fab fa-github"></i></a>
                 </p>
             </div>
             <h3>Igordos<span style="opacity: 50%">Dev</span></h3>
             <p style="font-size: 18px; position: relative; bottom: 5px"><a style="text-decoration: none; color: black" href="https://openvk.su/wall532_14">а дайте мне возможность делать многое и даже больше</a></p>
-            <details><summary class="unselectable">Мои плашки форумов</summary> <div class="card" style="height: 173px; width: 400px; position: relative; right: 32px"> <div class="content" style="position: relative; top: 10px">
-            <a href="https://mynickname.com/Igordos"><img src="https://mynickname.com/img.php?nick=Igordos&sert=23&text=t0" alt="mynickname.com" /></a>
-            <a href="https://yebanko.ru" target="_blank"><img src="https://yebanko.ru/files/symbols/userbar.1.gif" width="350" height="19" border="0" alt="Группа &laquo;Ебанько&raquo;" /></a>
-            <!-- <a href='javascript:samp_hyperlink()'><img width="350" src='https://monitoring.sa-mp.su/samp-rp/legacy/status.php?name=Igor_Galliani&s=12&l=1'></a> -->
-            <a href='https://valid.x86.fr/9ie85l'><img src='https://valid.x86.fr/cache/banner/9ie85l-6.png'></a>
-            <a href="https://www.guilded.gg/i/ExP0bR7E"><img src="https://cdn.discordapp.com/attachments/881161396342104085/1075845753794216147/discord-no-way.gif"></a> <a href="https://www.teamxlink.co.uk/go?c=kai" style="position: relative; left: 24px;"><img src="https://www.teamxlink.co.uk/media/buttons/01.gif" width="115px"></a> <img src="https://cdn.discordapp.com/attachments/881161396342104085/1075845755635503194/bestdesktop.gif" style="position: relative; left: 49px;"> <a href="https://cyber.dabamos.de/88x31/"><img src="https://cdn.discordapp.com/attachments/881161396342104085/1075845756088492122/buttons_now.gif"></a>    <a href="https://code.visualstudio.com/" style="position: relative; left: 38px"><img src="https://cdn.discordapp.com/attachments/881161396342104085/1076188879641640981/vscbutton.gif"></a> <a href="http://w01te.synergize.co"><img src="https://cdn.discordapp.com/attachments/1061325247577587852/1074069144825245796/site-bnr.gif" border="0" style="position: relative; left: 76px" title="w01te's Website" alt="w01te's Website"></a>
-            <a href="https://discord.gg/q8PUGZQazT" style="position: relative; left: 116px"> <img width="118" src="https://discordapp.com/api/guilds/706955958332424202/widget.png?style=shield"></a>
-        </div> </div> </details>
+            <details>
+                <summary class="unselectable">Мои плашки форумов</summary>
+                <div class="card details">
+                    <div class="content content-details">
+                        <a class="image" href="https://mynickname.com/Igordos"><img src="https://mynickname.com/img.php?nick=Igordos&sert=23&text=t0" alt="mynickname.com"></a>
+                        <a class="image" href="https://yebanko.ru" target="_blank"><img src="https://yebanko.ru/files/symbols/userbar.1.gif" alt="Группа &laquo;Ебанько&raquo;"/></a>
+                        <a class="image" href='https://valid.x86.fr/9ie85l'><img alt="cpu-z" src='https://valid.x86.fr/cache/banner/9ie85l-6.png'></a>
+                        <!-- <a href="https://www.guilded.gg/i/ExP0bR7E"><img src="https://cdn.discordapp.com/attachments/881161396342104085/1075845753794216147/discord-no-way.gif"></a> <a href="https://www.teamxlink.co.uk/go?c=kai" style="position: relative; left: 24px;"><img src="https://www.teamxlink.co.uk/media/buttons/01.gif" width="115px"></a> <img src="https://cdn.discordapp.com/attachments/881161396342104085/1075845755635503194/bestdesktop.gif" style="position: relative; left: 49px;"> <a href="https://cyber.dabamos.de/88x31/"><img src="https://cdn.discordapp.com/attachments/881161396342104085/1075845756088492122/buttons_now.gif"></a>    <a href="https://code.visualstudio.com/" style="position: relative; left: 38px"><img src="https://cdn.discordapp.com/attachments/881161396342104085/1076188879641640981/vscbutton.gif"></a> <a href="http://w01te.synergize.co"><img src="https://cdn.discordapp.com/attachments/1061325247577587852/1074069144825245796/site-bnr.gif" border="0" style="position: relative; left: 76px" title="w01te's Website" alt="w01te's Website"></a> -->
+                        <a class="discord image" href="https://discord.gg/q8PUGZQazT"><img alt="Discord" src="https://discordapp.com/api/guilds/706955958332424202/widget.png?style=shield"></a>
+                    </div>
+                </div>
+            </details>
         </div>
+        <div class="attribution">
+            <a href="#" class="attribution-link">©</a>
+        </div>
+    </div>
 </body> </html>
