@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Большое спасибо',
-            html: '𝑅 🍬𝐹 𝐿 за основную карточку и помощь с вёрсткой,<br>I\'mMails за помощь со скриптами и вёрсткой,<br>и fadeinside за ключ к API last.fm.',
+            html: '𝑅 🍬𝐹 𝐿 за основную карточку и помощь с вёрсткой,<br>I\'mMails за помощь со скриптами и вёрсткой,<br>Clyde (официальный ИИ от Discord) за виджет last.fm,<br>и fadeinside за ключ к API last.fm.',
             icon: 'info',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
@@ -44,10 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // last.fm
 $(document).ready(function () {
-    const user = "YOUR_NAME";
-    const apiKey = "API_KEY";
-    const url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + user + "&api_key=" + apiKey + "&format=json&limit=1";
-    $.getJSON(url, function (data) {
+    $.getJSON("/last.fm_api.php", function (data) {
         if (data.recenttracks.track[0].date) {
             $("#status a").text("а дайте мне возможность делать многое и даже больше");
         } else {
