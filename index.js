@@ -23,14 +23,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const randomImage = images[randomIndex];
 
     document.getElementById('avatar').src = 'https://' + randomImage;
-    document.getElementById('avatar').content = 'https://' + randomImage; // я ненавижу себя
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const attributionLink = document.querySelector('.attribution-link');
+    attributionLink.addEventListener('click', () => {
+        Swal.fire({
+            title: 'Большое спасибо',
+            html: '𝑅 🍬𝐹 𝐿 за основную карточку и помощь с вёрсткой,<br>I\'mMails за помощь со скриптами и вёрсткой,<br>и fadeinside за ключ к API last.fm.',
+            icon: 'info',
+            showCancelButton: true,
+            cancelButtonText: 'Отмена'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'https://github.com/IgordosDev/PersonalWeb';
+            }
+        });
+    });
+});
 
 // last.fm
 $(document).ready(function () {
-    const user = "Igordos";
-    const apiKey = "d14e43258ff2cd84ea2a4711a863c3aa";
+    const user = "YOUR_NAME";
+    const apiKey = "API_KEY";
     const url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + user + "&api_key=" + apiKey + "&format=json&limit=1";
     $.getJSON(url, function (data) {
         if (data.recenttracks.track[0].date) {
@@ -42,27 +57,5 @@ $(document).ready(function () {
             const html = "<div><i style='font-size: 25px; color: #b90000; bottom: 2px;' class='fab fa-lastfm'></i><span class='song'>" + artistName + " — " + trackName + "</span></div>";
             $("#status a").html(html).attr("href", url);
         }
-    });
-
-    $(".container").on("click", function () {
-        window.open("https://www.last.fm/ru/user/Igordos");
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const attributionLink = document.querySelector('.attribution-link');
-    attributionLink.addEventListener('click', () => {
-        Swal.fire({
-            title: 'Большое спасибо',
-            html: '𝑅 🍬𝐹 𝐿 за основную карточку и помощь с вёрсткой,<br>Clyde (официальный ИИ от Discord) за виджет last.fm,<br>I\'mMails за помощь со скриптами и вёрсткой<br>и fadeinside за ключ к API last.fm.',
-            icon: 'info',
-            showCancelButton: true,
-            cancelButtonText: 'Отмена'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = 'https://github.com/IgordosDev/PersonalWeb';
-            }
-        });
     });
 });
