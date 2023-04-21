@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Большое спасибо',
-            html: '𝑅 🍬𝐹 𝐿 за основную карточку и помощь с вёрсткой,<br>I\'mMails за помощь со скриптами и вёрсткой,<br>Clyde (официальный ИИ от Discord) за виджет last.fm,<br>и fadeinside за ключ к API last.fm.',
+            html: '<a href="https://immails.ml/">I\'mMails</a> за помощь со скриптами и вёрсткой,<br><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a> за основную карточку и всё что выше,<br><a href="https://dis.gd/clyde">Clyde</a> за виджет last.fm,<br>и <a href="https://fadeinside.online">fadeinside</a> за ключ к API last.fm.',
             icon: 'info',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
