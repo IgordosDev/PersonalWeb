@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
         'media.discordapp.net/attachments/863356751897296896/1007598313928937512/7a0062a07ae307bd0c3c42f402c32f89.png?width=500&height=500',
         'media.discordapp.net/attachments/863356751897296896/1045748342572974170/f02f1eec31de78103f96f62d495e57f2.png?width=500&height=500',
         'i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg',
-        'img.guildedcdn.com/UserAvatar/a4eded99bc54ff93ed5f333f0d5671f4-Large.webp?w=450&h=450'
+        'img.guildedcdn.com/UserAvatar/a4eded99bc54ff93ed5f333f0d5671f4-Large.webp?w=450&h=450',
+        'cdn.discordapp.com/guilds/609708818829541397/users/694849711437250581/avatars/a46e9764dff224361b31364da8302e8a.png'
     ];
 
     const randomIndex = Math.floor(Math.random() * images.length);
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Большое спасибо',
-            html: '<a href="https://immails.ml/">I\'mMails</a> за помощь со скриптами и вёрсткой,<br><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a> за основную карточку и всё что выше,<br><a href="https://dis.gd/clyde">Clyde</a> за виджет last.fm,<br>и <a href="https://fadeinside.online">fadeinside</a> за ключ к API last.fm.',
+            html: '<a href="https://immails.ml/">I\'mMails</a> за помощь со скриптами и вёрсткой,<br><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a> за основную карточку и всё что выше,<br><a href="https://dis.gd/clyde">Clyde</a> за виджет last.fm,<br><a href="https://bitor.in/">bit0r1n</a> за выделение домена<br>и <a href="https://fadeinside.online">fadeinside</a> за ключ к API last.fm.',
             icon: 'info',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
