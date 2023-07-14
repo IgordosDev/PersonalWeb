@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         'media.discordapp.net/attachments/863356751897296896/1045748342572974170/f02f1eec31de78103f96f62d495e57f2.png?width=500&height=500',
         'i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg',
         'img.guildedcdn.com/UserAvatar/a4eded99bc54ff93ed5f333f0d5671f4-Large.webp?w=450&h=450',
-        'cdn.discordapp.com/guilds/609708818829541397/users/694849711437250581/avatars/a46e9764dff224361b31364da8302e8a.png'
+        'cdn.discordapp.com/guilds/609708818829541397/users/694849711437250581/avatars/a46e9764dff224361b31364da8302e8a.png',
+        'ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original'
     ];
 
     const randomIndex = Math.floor(Math.random() * images.length);
