@@ -1,7 +1,7 @@
 <?php
     $curlSession = curl_init();
-    $api_user = "Igordos";
-    $api_key = "d14e43258ff2cd84ea2a4711a863c3aa";
+    $api_user = "YOUR_USER";
+    $api_key = "YOUR_KEY";
     curl_setopt($curlSession, CURLOPT_URL, "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=$api_user&api_key=$api_key&format=json&limit=1");
     curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
     curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
