@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Вы правда не мисскликнули?',
-            html: 'В таком случае, Ваши деньги пойдут в дело, прямо сейчас я коплю на переезд из родного города. <iframe src="https://widget.donatepay.ru/widgets/page/58263c3a762f12672ee82018125543ab8badc593997056cbdb708390c9675be2?widget_id=5588551&sum=10" width="510" height="220" style="position: relative; right: 47px; top: 15px" frameBorder="0"></iframe>',
+            html: 'В таком случае, Ваши деньги пойдут в дело - прямо сейчас я коплю на переезд из родного города и счастливую жизнь.',
             icon: 'question',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
