@@ -9,20 +9,18 @@ function samp_hyperlink() {
 */
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
-        'avatars.githubusercontent.com/u/6939218', // github
-        'lastfm.freetls.fastly.net/i/u/300x300/886c99244bd8976636564d40ad95d000.gif', // last.fm
-        'images-ext-2.discordapp.net/external/2a-ngndKSBLzX9Fy27OC3WsjPUs_jIpIo74jQLt4j7I/%3Fsize%3D1951x2160%26quality%3D96%26sign%3D04d5e3e4c6a4bb424f9e92346d09a45f%26type%3Dalbum/https/sun3-8.userapi.com/impg/HIRoJRkDPanN-CZmU3NinoM_0AA64OW9rNFHeA/4ASTTECrwSQ.jpg?width=500&height=500', // vk
-        'images-ext-1.discordapp.net/external/zKPQ-Z3uf3DoFLJV6m3AHWkq3qY0Nxn-g8_7GbdSUEU/https/astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg?format=webp&width=500&height=500', // openvk
-        'media.discordapp.net/attachments/863356751897296896/1007598313928937512/7a0062a07ae307bd0c3c42f402c32f89.png?width=500&height=500', // default avatar 
-        'media.discordapp.net/attachments/863356751897296896/1045748342572974170/f02f1eec31de78103f96f62d495e57f2.png?width=500&height=500', // among us avatar
-        'i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default avatar
-        'img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki avatar
-        'ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original', // gravatar
-        'cdn.discordapp.com/attachments/933669422332252180/961300223454490714/sa-mp-035.png' // old samp-rp
+        'https://avatars.githubusercontent.com/u/6939218', // github
+        'https://lastfm.freetls.fastly.net/i/u/300x300/886c99244bd8976636564d40ad95d000.gif', // last.fm
+        'https://astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg', // openvk
+        '/img/noelle.jpg', // default avatar
+        '/img/among-us-avatar.png', // among us avatar
+        'https://i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default avatar
+        'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki avatar
+        'https://ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original' // gravatar
     ];
     const randomIndex = Math.floor(Math.random() * images.length);
     const randomImage = images[randomIndex];
-    document.getElementById('avatar').src = 'https://' + randomImage;
+    document.getElementById('avatar').src = randomImage;
 });
 
 // copyright button
