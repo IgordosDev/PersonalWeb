@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Большое спасибо',
-            html: '<u><a href="https://immails.su">I\'mMails</a></u> за помощь со скриптами и вёрсткой,<br><u><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a></u> за основную карточку и всё что выше,<br><u><a href="javascript:clyde()">Clyde</a></u> за виджет last.fm,<br><u><a href="https://bitor.in/">bit0r1n</a></u> за выделение домена<br>и <u><a href="https://fadeinsi.de">fadeinside</a></u> за ключ к API last.fm.<br>При нажатии на <b>OK</b> - произойдёт переход на репозиторий сайта.',
+            html: '<u><a href="https://immails.su">immails</a></u> за помощь со скриптами и вёрсткой,<br><u><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a></u> за основную карточку и всё что выше,<br><u><a href="javascript:clyde()">Clyde</a></u> за виджет last.fm,<br><u><a href="https://bitor.in/">bit0r1n</a></u> за выделение домена<br>и <u><a href="https://fadeinsi.de">fadeinside</a></u> за ключ к API last.fm.<br>При нажатии на <b>OK</b> - произойдёт переход на репозиторий сайта.',
             icon: 'info',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // last.fm widget
 $(document).ready(function () {
-    $.getJSON("/last.fm_api.php", function (data) {
+    $.getJSON("/api/last-fm", function (data) {
         if (data.recenttracks.track[0].date) {
             $("#status a").text("а дайте мне возможность делать многое и даже больше");
         } else {
