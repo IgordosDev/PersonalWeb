@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'https://astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg', // openvk
         '/img/noelle.jpg', // default avatar
         '/img/among-us-avatar.png', // among us avatar
+        '/img/infinite_by_prekoler.png', // t.me avatar (by vk.com/prekoler)
         'https://i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default avatar
         'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki avatar
         'https://ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original' // gravatar
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // copyright button
 function clyde() {
     if(confirm('Увы, Discord решили закрыть бота с чат-нейросетью даже не оставив статьи о нём, поэтому Вы получаете это сообщение с вопросом о переходе на архивную страницу со статьёй о боте. Вся информация там неактуальна. Для перехода - нажмите "ОК"')) {
-        document.location.href='https://web.archive.org/web/20230320090056/https://dis.gd/clyde';
+        document.location.href='https://web.archive.org/web/20230319111933/https://support.discord.com/hc/en-us/articles/13066317497239';
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // last.fm widget
 $(document).ready(function () {
-    $.getJSON("/api/last-fm", function (data) {
+    $.getJSON("/last.fm_api.php", function (data) {
         if (data.recenttracks.track[0].date) {
             $("#status a").text("а дайте мне возможность делать многое и даже больше");
         } else {

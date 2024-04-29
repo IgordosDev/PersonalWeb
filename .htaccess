@@ -1,0 +1,14 @@
+AddDefaultCharset utf-8
+ErrorDocument 404 https://http.cat/404
+ErrorDocument 500 https://http.cat/500
+
+Redirect 303 /lastfm https://www.last.fm/ru/user/Igordos
+Redirect 303 /twitch https://twitch.tv/igodra_
+Redirect 303 /youtube https://www.youtube.com/c/Igordos
+Redirect 303 /vk https://ovk.to/id2460
+Redirect 303 /openvk https://ovk.to/id2460
+Redirect 303 /discord https://discord.gg/RqnU6VB9cT
+Redirect 301 /blog https://teletype.in/@Igordos
+Redirect 303 /github https://github.com/IgordosDev
+Redirect 303 /megalovania https://jcw87.github.io/c2-sans-fight/
+Redirect 303 /spelunky http://tinysubversions.com/game/spelunky/
