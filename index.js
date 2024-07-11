@@ -7,16 +7,18 @@ function samp_hyperlink() {
     }
 }
 */
+// random avatar
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
         'https://avatars.githubusercontent.com/u/6939218', // github
         'https://lastfm.freetls.fastly.net/i/u/300x300/886c99244bd8976636564d40ad95d000.gif', // last.fm
         'https://astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg', // openvk
-        '/img/noelle.jpg', // default avatar
-        '/img/among-us-avatar.png', // among us avatar
-        '/img/infinite_by_prekoler.png', // t.me avatar (by vk.com/prekoler)
-        'https://i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default avatar
-        'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki avatar
+        '/img/noelle.jpg', // default
+        '/img/among-us-avatar.png', // among us
+        '/img/infinite_by_prekoler.png', // моя коммишка от vk.com/prekoler
+        '/img/rekvizit.png', // я не придумал, я просто люблю эту пикчу
+        'https://i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default
+        'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki
         'https://ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original' // gravatar
     ];
     const randomIndex = Math.floor(Math.random() * images.length);
@@ -47,22 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// donate button
-document.addEventListener("DOMContentLoaded", function () {
-    const attributionLink = document.querySelector('.donate-link');
-    attributionLink.addEventListener('click', () => {
-        Swal.fire({
-            title: 'Вы правда не мисскликнули?',
-            html: 'В таком случае, Ваши деньги пойдут в дело - прямо сейчас я коплю на переезд из родного города и счастливую жизнь.',
-            icon: 'question',
-            showCancelButton: true,
-            cancelButtonText: 'Нажал(а) из интереса'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = 'https://new.donatepay.ru/@Igordos';
-            }
-        });
-    });
+// random icon
+document.addEventListener('DOMContentLoaded', function () {
+    const icons = ['/img/sad.ico', '/img/smirk.ico', '/img/tired.ico', '/img/nervous.ico'];
+    const randomIndex = Math.floor(Math.random() * icons.length);
+    const randomIcon = icons[randomIndex];
+    document.getElementById('icon').href = randomIcon;
 });
 
 // last.fm widget
