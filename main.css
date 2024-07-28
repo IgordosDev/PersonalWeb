@@ -159,12 +159,12 @@ summary {
     top: 10px;
 }
 
-.discord {
+/* .discord {
     position: absolute;
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .song {
     text-overflow: ellipsis;
