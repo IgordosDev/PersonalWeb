@@ -11,12 +11,12 @@ function samp_hyperlink() {
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
         'https://avatars.githubusercontent.com/u/6939218', // github
-        'https://lastfm.freetls.fastly.net/i/u/300x300/886c99244bd8976636564d40ad95d000.gif', // last.fm
-        'https://astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg', // openvk
+        '/img/last.fm-avatar.gif',
+        'https://astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg', // openvk avatar by mitsvalen
         '/img/noelle.jpg', // default
         '/img/among-us-avatar.png', // among us
         '/img/infinite_by_prekoler.png', // моя коммишка от vk.com/prekoler
-        '/img/rekvizit.png', // я не придумал, я просто люблю эту пикчу (но ещё она стоит в тг)
+        '/img/rekvizit.png', // я не придумал, я просто люблю эту пикчу
         'https://i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default
         'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki
         'https://ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original' // gravatar
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Большое спасибо',
-            html: '<u><a href="https://immails.su">immails</a></u> за помощь со скриптами и вёрсткой,<br><u><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a></u> за основную карточку и всё что выше,<br><u><a href="javascript:clyde()">Clyde</a></u> за виджет last.fm,<br><u><a href="https://bitor.in/">bit0r1n</a></u> за выделение домена<br>и <u><a href="https://fadeinsi.de">fadeinside</a></u> за ключ к API last.fm.<br>При нажатии на <b>OK</b> - произойдёт переход на репозиторий сайта.',
+            html: '<u><a href="https://immails.su">immails</a></u> за помощь со скриптами и вёрсткой,<br><u><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a></u> за основную карточку и всё что выше,<br><u><a href="javascript:clyde()">Clyde</a></u> за виджет last.fm,<br><u><a href="https://bitor.in/">bit0r1n</a></u> за поддомены <u><a href="https://arbuz.pro/">arbuz.pro</a></u><br>и <u><a href="https://kaoshipaws.t.me">fadeinside</a></u> за ключ к API last.fm.<br>При нажатии на <b>OK</b> - произойдёт переход на репозиторий сайта.',
             icon: 'info',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
