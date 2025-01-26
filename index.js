@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const images = [
         'https://avatars.githubusercontent.com/u/6939218', // github
         '/img/last.fm-avatar.gif',
-        'https://astral.express.wf/hentai/d6/d68d9f478e0c1a4a94aded20437341052e6785a0cb64f3ecd98c03374ef88542c65d80cec1bfcdaa90463138fa5ec5e3bd976e07c0030199c714079c7213c619.jpeg', // openvk avatar by mitsvalen
+        '/img/openvk-avatar.png', // openvk avatar by mitsvalen
         '/img/noelle.jpg', // default
         '/img/among-us-avatar.png', // among us
         '/img/infinite_by_prekoler.png', // моя коммишка от vk.com/prekoler
