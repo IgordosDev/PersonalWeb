@@ -40,3 +40,11 @@ i {
     max-height: 150px;
     max-width: 70%;
 }
+
+.spoiler {
+    filter: blur(10px);
+    &:hover {
+        filter: none;
+        };
+        transition: 100ms eace
+    } /* спасибо @kaoshipaws */
