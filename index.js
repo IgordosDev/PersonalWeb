@@ -25,12 +25,7 @@ function clyde() {
         document.location.href='https://web.archive.org/web/20230319111933/https://support.discord.com/hc/en-us/articles/13066317497239'
     }
 }
-// w01te button
-function w01te() {
-    if(confirm('В момент последнего коммита сайт Войта лежал, поэтому здесь указана ссылка на веб-архив его вебсайта, добавлено ради ознакомления, но использовать ссылки оттуда не рекомендуется. Для продолжения нажмите "ОК".')) {
-        document.location.href='https://web.archive.org/web/20240913182428/https://w01te.narod.ws/about/'
-    }
-}
+
 document.addEventListener("DOMContentLoaded", function () {
     const attributionLink = document.querySelector('.attribution-link');
     attributionLink.addEventListener('click', () => {
