@@ -12,8 +12,6 @@ Redirect 303 /openvk https://ovk.to/id2460
 Redirect 303 /discord https://discord.gg/RqnU6VB9cT
 Redirect 301 /Igodra https://www.youtube.com/embed/q9zKYh8sY_E
 Redirect 301 /igodra https://www.youtube.com/embed/q9zKYh8sY_E
-Redirect 301 /blog https://t.me/+FgzN7d1wiU4zNzMy
-\\ https://teletype.in/@Igordos
 Redirect 303 /github https://github.com/IgordosDev
 Redirect 303 /megalovania https://jcw87.github.io/c2-sans-fight/
 Redirect 303 /spelunky http://tinysubversions.com/game/spelunky/
@@ -27,3 +25,5 @@ RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*) /$1.html
+
+Header set X-Frame-Options: SAMEORIGIN

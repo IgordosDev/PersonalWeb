@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '/img/among-us-avatar.png', // among us
         '/img/infinite_by_prekoler.png', // моя коммишка от vk.com/prekoler
         '/img/rekvizit.png', // я не придумал, я просто люблю эту пикчу
-        'https://i1.sndcdn.com/avatars-5xRvsgp6ZoKePtQG-4p3C6A-t500x500.jpg', // soundcloud / default
+        '/img/CY-ZPKxcFU0.jpg', // default
         'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki
         'https://ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original' // gravatar
     ];
@@ -20,18 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // copyright button
-function clyde() {
-    if(confirm('Увы, Discord решили закрыть бота с чат-нейросетью даже не оставив статьи о нём, поэтому Вы получаете это сообщение с вопросом о переходе на архивную страницу со статьёй о боте. Вся информация там неактуальна. Для перехода - нажмите "ОК"')) {
-        document.location.href='https://web.archive.org/web/20230319111933/https://support.discord.com/hc/en-us/articles/13066317497239'
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     const attributionLink = document.querySelector('.attribution-link');
     attributionLink.addEventListener('click', () => {
         Swal.fire({
             title: 'Большое спасибо',
-            html: '<u><a href="https://immails.su">immails</a></u> за помощь со скриптами и вёрсткой,<br><u><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a></u> за основную карточку и всё что выше,<br><u><a href="javascript:clyde()">Clyde</a></u> за виджет last.fm,<br><u><a href="https://bitor.in/">bit0r1n</a></u> за поддомены <u><a href="https://arbuz.pro/">arbuz.pro</a></u><br>и <u><a href="https://kaoshipaws.t.me">kaoshipaws</a></u> за ключ к API last.fm.<br>При нажатии на <b>OK</b> - произойдёт переход на репозиторий сайта, если он Вам понравился - большая просьба оставить свою звезду. <i class="fas fa-star"></i>',
+            html: 'immails за помощь со скриптами и вёрсткой,<br><u><a href="https://rofl-here.glitch.me/">𝑅 🍬𝐹 𝐿</a></u> за основную карточку и всё что выше,<br><u><a href="https://discord.fandom.com/ru/wiki/Clyde_AI">Clyde</a></u> за виджет last.fm,<br><u><a href="https://bitor.in/">bit0r1n</a></u> за поддомены <u><a href="https://arbuz.pro/">arbuz.pro</a></u><br>и kaoshipaws за ключ к API last.fm.<br>При нажатии на <b>OK</b> - произойдёт переход на репозиторий сайта, если он Вам понравился - большая просьба оставить свою звезду. <i class="fas fa-star"></i>',
             icon: 'info',
             showCancelButton: true,
             cancelButtonText: 'Отмена'
