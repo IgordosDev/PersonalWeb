@@ -24,5 +24,8 @@ RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*) /$1.html
+\\ скрытие ?i=1 появляющееся по каким-то причинам
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^([^.]*)$ /$1? [L,NE,R=301]
 
 Header set X-Frame-Options: SAMEORIGIN
