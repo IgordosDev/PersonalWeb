@@ -126,6 +126,7 @@ summary {
     bottom: 5px;
     transition: .20s;
     cursor: pointer;
+    text-decoration: none
 }
 
 #status a {
