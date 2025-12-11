@@ -38,7 +38,11 @@ i {
 
 .gallery img {
     max-height: 150px;
-    max-width: 70%;
+    /* max-width: 70%; */
+}
+
+.gallery > a {
+    display: inline-block;
 }
 
 .spoiler {
