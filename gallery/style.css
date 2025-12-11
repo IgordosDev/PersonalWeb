@@ -32,6 +32,11 @@ a, a:visited {
     text-decoration: none;
 }
 
+.tippy-content a {
+    color: forestgreen;
+
+}
+
 i {
     opacity: 50%;
 }
