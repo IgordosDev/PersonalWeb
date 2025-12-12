@@ -44,10 +44,14 @@ i {
 .gallery img {
     max-height: 150px;
     /* max-width: 70%; */
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
 }
 
 .gallery > a {
     display: inline-block;
+    max-width: 100vw;
 }
 
 .spoiler {
