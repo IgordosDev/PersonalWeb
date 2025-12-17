@@ -34,7 +34,6 @@ a, a:visited {
 
 .tippy-content a {
     color: forestgreen;
-
 }
 
 i {
@@ -47,6 +46,14 @@ i {
     width: -moz-available;
     width: -webkit-fill-available;
     width: fill-available;
+}
+
+/* Override for images inside tippy tooltips to prevent stretching */
+.gallery .tippy-content img {
+    max-height: 40px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .gallery > a {
