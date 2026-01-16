@@ -48,7 +48,6 @@ i {
     width: fill-available;
 }
 
-/* Override for images inside tippy tooltips to prevent stretching */
 .gallery .tippy-content img {
     max-height: 40px;
     width: auto;
@@ -59,6 +58,11 @@ i {
 .gallery > a {
     display: inline-block;
     max-width: 100vw;
+}
+
+.alt-images img {
+    max-height: 150px !important;
+    height: 150px;
 }
 
 .spoiler {
