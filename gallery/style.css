@@ -43,9 +43,9 @@ i {
 .gallery img {
     max-height: 150px;
     /* max-width: 70%; */
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
+    /* width: -moz-available; */
+    /* width: -webkit-fill-available; */
+    /* width: fill-available; */
 }
 
 .gallery .tippy-content img {
