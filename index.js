@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         '/img/infinite_by_prekoler.png', // моя коммишка от vk.com/prekoler
         '/img/rekvizit.png', // я не придумал, я просто люблю эту пикчу
         '/img/CY-ZPKxcFU0.jpg', // default
-        'https://img.guildedcdn.com/UserAvatar/ba5945958bb2f482717e0e795d30d447-Large.webp?w=450&h=450', // guilded / tatsumaki
         'https://ru.gravatar.com/userimage/184665281/3093176e9bb3b54c049fd1e80570835c?size=original' // gravatar
     ];
     const randomIndex = Math.floor(Math.random() * images.length);
