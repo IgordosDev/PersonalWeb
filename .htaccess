@@ -7,10 +7,10 @@ ErrorDocument 503 https://http.cat/503
 Redirect 303 /lastfm https://www.last.fm/ru/user/Igordos
 Redirect 303 /twitch https://twitch.tv/igodra_
 Redirect 303 /youtube https://www.youtube.com/c/Igordos
-Redirect 303 /vk https://ovk.to/id2460
-Redirect 303 /openvk https://ovk.to/id2460
-Redirect 303 /discord https://discord.gg/RqnU6VB9cT
-Redirect 301 /igodra https://i.orehus.club/embed/q9zKYh8sY_E
+Redirect 303 /vk https://openvk.org/id2460
+Redirect 303 /openvk https://openvk.org/id2460
+Redirect 303 /discord https://discord.gg/xRV2PGdSGg
+Redirect 301 /igodra https://youtube.com/embed/q9zKYh8sY_E
 Redirect 303 /github https://github.com/IgordosDev
 Redirect 303 /megalovania https://jcw87.github.io/c2-sans-fight/
 Redirect 303 /spelunky http://tinysubversions.com/game/spelunky/

@@ -10,6 +10,7 @@ body {
     background: linear-gradient(-30deg, #0F1609, #313D21);
     font-family: 'Jost', sans-serif;
     backdrop-filter: blur(5px);
+    text-decoration: none;
 }
 
 a {
