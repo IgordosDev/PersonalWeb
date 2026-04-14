@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // last.fm widget
-$(document).ready(function () {
+/* $(document).ready(function () {
     $.getJSON("/last.fm_api.php", function (data) {
         if (data.recenttracks.track[0].date) {
-            $("#status a").text("а дайте мне возможность делать многое и даже больше");
-        } else {
+         */   $("#status a").text("а дайте мне возможность делать многое и даже больше");
+    /*    } else {
             const trackName = data.recenttracks.track[0].name;
             const artistName = data.recenttracks.track[0].artist["#text"];
             const url = "https://www.last.fm/music/" + encodeURIComponent(artistName) + "/_/" + encodeURIComponent(trackName);
@@ -57,7 +57,7 @@ $(document).ready(function () {
             $("#status a").html(html).attr("href", url);
         }
     });
-});
+}); */
 
 /* сохраняю для себя, пригодится
 function samp_hyperlink() {
