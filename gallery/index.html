@@ -5,15 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.js"></script>
-	<script>
-		window.addEventListener('load', function() {
-		  baguetteBox.run('.gallery', {
-		  captions: function(element) {
-			return element.getElementsByTagName('img')[0].alt;
-		} }) } );
-		</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>document.addEventListener('DOMContentLoaded', () => {
+    const galleries = document.querySelectorAll('.gallery');
+    galleries.forEach((gallery, index) => {
+        const links = gallery.querySelectorAll('a');
+        links.forEach(link => {
+            link.setAttribute('data-fancybox', `gallery-${index}`);
+            const img = link.querySelector('img');
+            if (img && img.hasAttribute('alt') && img.getAttribute('alt') !== '') {
+                link.setAttribute('data-caption', img.getAttribute('alt'));
+            }
+        });
+    });
+
+    Fancybox.bind("[data-fancybox^='gallery-']", {
+        Html: {
+            videoTpl: '<video style="width: 100%; height: 100%; max-width: 100%; max-height: 70vh; object-fit: contain; display: block; margin: 0 auto;" class="f-html" controls controlsList="nodownload" poster="{{poster}}"><source src="{{src}}" type="{{format}}" />Ваш браузер не поддерживает видео. Или вы выключили их отображение, я не осуждаю.</video>'
+        }});
+});
+	</script>
 	<!-- Open Graph -->
 	<meta property="og:locale" content="ru_RU">
 	<meta property="og:title" content="Галерея сигн и артов">
@@ -32,8 +44,41 @@
 		<h3>Все сигны размещены здесь с разрешения авторов, разрешение на арты не необходимо из-за их прямого заказа мной, или подарочного присвоения.</h3><h4>Заказные арты за деньги помечены эмодзи 💲 в описании, бесплатные - 🆓. Размытые изображения - NSFW.</h4>
 	</header>
 		<div class="content">
+			<h3 id="rineya"><a href="https://t.me/+E8YVPde-TMo3MzIy">Rineya Gray</a> <a href="./#rineya"><i class="fas fa-link"></i></a></h3>
+			<div class="gallery">
+				<a href="./images/1_rineya.jpg"><img src="./images/preview/1_rineya.png" alt="[🆓] Я и Какава в образе Шрека с Фионой, если объяснение необходимо"></a>
+				<a href="./images/2_rineya.jpg"><img src="./images/preview/2_rineya.png" alt="[🆓]"></a>
+				<a href="./images/3_rineya.png"><img src="./images/preview/3_rineya.png" alt="[🆓]"></a>
+				<a href="./images/4_rineya.png"><img src="./images/preview/4_rineya.png" alt="[🆓] Гифт на 20-летие" class="spoiler"></a>
+				<a href="./images/5_rineya.png" tippy-data="[🆓] <a href='https://t.me/rineyarat/782'>Пост в Telegram</a>" style="padding-left: 15px;" title="главный референс, обводка специально для привлечения внимания"><img src="./images/preview/5_rineya.png" style="box-shadow: 0 0 7px 7px #f1d176ef;" alt="[💲] Главный референс, просьба использовать его и только его, если же эта галерея кому-нибудь когда-нибудь понадобится."></a>
+			</div>
+			<h3 id="TheJim46"><a href="https://www.ungenerated.io/artists/jimFrom46">TheJim46</a> <a href="./#TheJim46"><i class="fas fa-link"></i></a></h3>
+			<div class="gallery">
+				<a href="./images/1_jim.jpg"><img src="./images/preview/1_jim.png" alt="[🆓] Своеобразная шутка на окончание никнейма в виде аббривеатуры &#34;DOS&#34;"></a>
+				<a href="./images/2_jim.png"><img src="./images/preview/2_jim.png" alt="[🆓]"></a>
+				<a href="./images/3_jim.jpg"><img src="./images/preview/3_jim.png" alt="[🆓]"></a>
+				<a href="./images/4_jim.png" tippy-data="[🆓] Альтернативная версия:<div class='alt-images'><a href='./images/4_jim_alt.png'><img src='./images/preview/4_jim_alt.png'></div>"><img src="./images/preview/4_jim.png" alt="[🆓]"></a>
+				<a href="./images/5_jim.jpg"><img src="./images/preview/5_jim.png" alt="[🆓]"></a>
+				<a href="./images/6_jim.png"><img src="./images/preview/6_jim.png" alt="[🆓]"></a>
+			</div>
+			<h3 id="MitsValen"><a href="https://bsky.app/profile/mitsvalen.bsky.social">MitsValen</a> <a href="./#MitsValen"><i class="fas fa-link"></i></a></h3>
+			<div class="gallery">
+				<a href="./images/1_mitsvalen.jpg"><img src="./images/preview/1_mitsvalen.png" alt="[💲]"></a>
+				<a href="./images/2_mitsvalen.jpg"><img src="./images/preview/2_mitsvalen.png" alt="[🆓]"></a>
+			</div>
+			<h3 id="Fokby"><a href="https://vk.com/fokbynotfound">Fokby</a> <a href="./#Fokby"><i class="fas fa-link"></i></a></h3>
+			<div class="gallery">
+				<a href="./images/1_fokby.jpg"><img src="./images/1_fokby.jpg" alt="[🆓] Да, это нарисовано в Paint"></a>
+				<a href="./images/2_fokby.jpg"><img src="./images/preview/2_fokby.png" alt="[🆓]"></a>
+				<a href="./images/3_fokby.png"><img src="./images/preview/3_fokby.png" alt="[🆓]"></a>
+			</div>
+			<h3 id="Sparrow"><a href="https://steamcommunity.com/profiles/76561199543231812/">Воробушек,</a> <a href="./#Sparrow"><i class="fas fa-link"></i></a></h3>
+			<div class="gallery">
+				<a href="./images/1_sparrow.jpg"><img src="./images/preview/1_sparrow.png" alt="[💲]"></a>
+				<a href="./images/2_sparrow.jpg"><img src="./images/preview/2_sparrow.png" alt="[💲]"></a>
+			</div>
 			<h3 id="Kakava"><a href="https://t.me/+G-bU7huIe5o2MDYy">Kakava</a> / <s>Sata Nia</s> <a href="./#Kakava"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
+			<div class="gallery">
 				<a href="./images/1_kakava.jpg" tippy-data="[🆓] Альтернативная версия:<div class='alt-images spoiler'><a href='./images/1_kakava_alt.jpg'><img src='./images/preview/1_kakava_alt.png'></div>"><img src="./images/preview/1_kakava.png" alt="[🆓] По сути своей - это самый первый арт, который я реквестнул для себя"></a>
 				<a href="./images/2_kakava.png"><img src="./images/preview/2_kakava.png" alt="[🆓] Вдохновлено трендом от Павла Дурова"></a>
 				<a href="./images/3_kakava.png"><img src="./images/preview/3_kakava.png" alt="[🆓] После того, как я нашёл ютубера Motidzuki и увидел, что у него фактически одинаковый персонаж как у меня, я решил просто поменять цвет окраски своей фуррсоне"></a>
@@ -46,55 +91,23 @@
 				<a href="./images/10_kakava.png"><img src="./images/preview/10_kakava.png" alt="[🆓]"></a>
 				<a href="./images/11_kakava.jpg"><img src="./images/preview/11_kakava.png" alt="[🆓] Открытка на 20-летие"></a>
 				<a href="./images/12_kakava.jpg" tippy-data="[🆓] <a href='https://t.me/kkvside/207'>Пост в Telegram</a>"><img src="./images/preview/12_kakava.png"></a>
-			</div>
-			<h3 id="rineya"><a href="https://t.me/+E8YVPde-TMo3MzIy">Rineya Gray</a> <a href="./#rineya"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
-				<a href="./images/1_rineya.jpg"><img src="./images/preview/1_rineya.png" alt="[🆓] Я и Какава в образе Шрека с Фионой, если объяснение необходимо"></a>
-				<a href="./images/2_rineya.jpg"><img src="./images/preview/2_rineya.png" alt="[🆓]"></a>
-				<a href="./images/3_rineya.png"><img src="./images/preview/3_rineya.png" alt="[🆓]"></a>
-				<a href="./images/4_rineya.png"><img src="./images/preview/4_rineya.png" alt="[🆓] Гифт на 20-летие" class="spoiler"></a>
-				<a href="./images/5_rineya.png" tippy-data="[🆓] <a href='https://t.me/rineyarat/782'>Пост в Telegram</a>" style="padding-left: 15px;" title="главный референс, обводка специально для привлечения внимания"><img src="./images/preview/5_rineya.png" style="box-shadow: 0 0 7px 7px #f1d176ef;" alt="[💲] Главный референс, просьба использовать его и только его, если же эта галерея кому-нибудь когда-нибудь понадобится."></a>
-			</div>
-			<h3 id="TheJim46">TheJim46 <a href="./#TheJim46"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
-				<a href="./images/1_jim.jpg"><img src="./images/preview/1_jim.png" alt="[🆓] Своеобразная шутка на окончание никнейма в виде аббривеатуры &#34;DOS&#34;"></a>
-				<a href="./images/2_jim.png"><img src="./images/preview/2_jim.png" alt="[🆓]"></a>
-				<a href="./images/3_jim.jpg"><img src="./images/preview/3_jim.png" alt="[🆓]"></a>
-				<a href="./images/4_jim.png" tippy-data="[🆓] Альтернативная версия:<div class='alt-images'><a href='./images/4_jim_alt.png'><img src='./images/preview/4_jim_alt.png'></div>"><img src="./images/preview/4_jim.png" alt="[🆓]"></a>
-				<a href="./images/5_jim.jpg"><img src="./images/preview/5_jim.png" alt="[🆓]"></a>
-				<a href="./images/6_jim.png"><img src="./images/preview/6_jim.png" alt="[🆓]"></a>
-			</div>
-			<h3 id="MitsValen"><a href="https://bsky.app/profile/mitsvalen.bsky.social">MitsValen</a> <a href="./#MitsValen"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
-				<a href="./images/1_mitsvalen.jpg"><img src="./images/preview/1_mitsvalen.png" alt="[💲]"></a>
-				<a href="./images/2_mitsvalen.jpg"><img src="./images/preview/2_mitsvalen.png" alt="[🆓]"></a>
-			</div>
-			<h3 id="Fokby"><a href="https://vk.com/fokbynotfound">Fokby</a> <a href="./#Fokby"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
-				<a href="./images/1_fokby.jpg"><img src="./images/1_fokby.jpg" alt="[🆓] Да, это нарисовано в Paint"></a>
-				<a href="./images/2_fokby.jpg"><img src="./images/preview/2_fokby.png" alt="[🆓]"></a>
-				<a href="./images/3_fokby.png"><img src="./images/preview/3_fokby.png" alt="[🆓]"></a>
-			</div>
-			<h3 id="Sparrow"><a href="https://steamcommunity.com/profiles/76561199543231812/">Воробушек,</a> <a href="./#Sparrow"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
-				<a href="./images/1_sparrow.jpg"><img src="./images/preview/1_sparrow.png" alt="[💲]"></a>
-				<a href="./images/2_sparrow.jpg"><img src="./images/preview/2_sparrow.png" alt="[💲]"></a>
+				<a href="./images/13_kakava.mp4" tippy-data="[🆓] <a href='https://t.me/kkvside/426'>Пост в Telegram</a>"><img src="./images/preview/13_kakava.png"></a>
 			</div>
 			<h3 id="nn">Остальное: от неизвестных или не указанных выше авторов <a href="./#nn"><i class="fas fa-link"></i></a></h3>
-			<div class="baguetteBoxTwo gallery">
+			<div class="gallery">
 				<a href="./images/1_nn.jpg" tippy-data="[🆓] <a href='https://vk.com/vsratysh01'>Страница автора в VK</a>"><img src="./images/preview/1_nn.png"></a>
-				<a href="./images/2_nn.jpg"><img src="./images/preview/2_nn.png" alt="[🆓] © Agust"></a>
-				<a href="./images/3_nn.png"><img src="./images/preview/3_nn.png" alt="[💲] © MarzDrejk"></a> <!-- я не помню у кого покупал за амино монеты арт, но это был этот автор, либо строчкой выше. А этот комментарий - своеобразное напоминание для себя -->
+				<a href="./images/2_nn.jpg"><img src="./images/preview/2_nn.png" alt="[🆓] Agust"></a>
+				<a href="./images/3_nn.png"><img src="./images/preview/3_nn.png" alt="[💲] MarzDrejk"></a> <!-- я не помню у кого покупал за амино монеты арт, но это был этот автор, либо строчкой выше. А этот комментарий - своеобразное напоминание для себя -->
 				<a href="./images/4_nn.png"><img src="./images/preview/4_nn.png" alt="[🆓]"></a>
-				<a href="./images/5_nn.jpg"><img src="./images/preview/5_nn.png" alt="[💲] © FelixBox"></a>
-				<a href="./images/6_nn.jpg" tippy-data="[🆓] © <a href='https://t.me/rentgen_tulenya'>Depressed Seal</a>"><img src="./images/preview/6_nn.png" alt="[🆓] © Depressed Seal"></a>
-				<a href="./images/7_nn.jpg"><img src="./images/preview/7_nn.png" alt="[🆓] Фотошоп от © w01te"></a>
-				<a href="/img/infinite_by_prekoler.png" tippy-data="[💲] © Заказ от <a href='https://vk.com/prekoler'>преколера</a>"><img src="./images/preview/infinite_by_prekoler.png" alt="[💲] © преколер!"></a>
+				<a href="./images/5_nn.jpg"><img src="./images/preview/5_nn.png" alt="[💲] FelixBox"></a>
+				<a href="./images/6_nn.jpg" tippy-data="[🆓] <a href='https://t.me/rentgen_tulenya'>Depressed Seal</a>"><img src="./images/preview/6_nn.png" alt="[🆓] Depressed Seal"></a>
+				<a href="./images/7_nn.jpg"><img src="./images/preview/7_nn.png" alt="[🆓] Фотошоп от w01te"></a>
+				<a href="/img/infinite_by_prekoler.png" tippy-data="[💲] <a href='https://t.me/narovcomics'>преколер!</a>"><img src="./images/preview/infinite_by_prekoler.png" alt="[💲] преколер!"></a>
 				<a href="./images/1_evgnm.png" tippy-data="[🆓] Подарок на новый год от <b>evgnm</b>: <a href='https://t.me/evgnmdraw/72'>пост на оригинал</a>. Также в <a href='https://bsky.app/profile/evgnm.bsky.social/post/3mbp4t5hdv22l'>Bluesky</a>. Альтернативные версии:<div class='alt-images'><a href='./images/1_evgnm_alt1.png'><img src='./images/preview/1_evgnm_alt1.png'></a><a href='./images/1_evgnm_alt2.png'><img src='./images/preview/1_evgnm_alt2.png'></a><a href='./images/1_evgnm_alt3.png'><img src='./images/preview/1_evgnm_alt3.png'></a></div>"><img src="./images/preview/1_evgnm.png" alt="[🆓] Подарок на НГ от evgnm"></a>
-				<a href="./images/1_bunsweet.png"><img src="./images/preview/1_bunsweet.png" alt="[💲] Автор: https://t.me/bun_sweet7"></a>
+				<a href="./images/1_bunsweet.png" tippy-data="[💲] <a href='https://t.me/bun_sweet7'>Булочка</a>"><img src="./images/preview/1_bunsweet.png" alt="[💲] Автор: Булочка"></a>
 			</div>
 			<header id="signs" style="padding: 15px">Сигны <a href="./#signs"><i class="fas fa-link"></i></a></header>
-			<div class="baguetteBoxTwo gallery" style="margin-top: 4px;">
+			<div class="gallery" style="margin-top: 4px;">
 				<a href="./images/signs/sad_daniels.png" tippy-data="[🆓] <a href='https://twitch.tv/sad_daniels'>twitch.tv/sad_daniels</a>"><img src="./images/preview/signs/sad_daniels.png"></a>
 				<a href="./images/signs/lisska.jpg" tippy-data="[🆓] <a href='https://t.me/Lisska404'>t.me/Lisska404</a>"><img src="./images/preview/signs/lisska.png"></a>
 				<a href="./images/signs/dssssscc.jpg" tippy-data="[🆓] <a href='https://t.me/kehebeoa'>dssssscc</a>"><img src="./images/preview/signs/dssssscc.png"></a>
@@ -103,7 +116,7 @@
 				<a href="./images/signs/eversiege.JPG" tippy-data="[🆓] <a href='https://t.me/eversiegetrash'>эверсижка</a>"><img src="./images/preview/signs/eversiege.png"></a>
 			</div>
 		</div>
-		<footer>Использованы скрипты: <a href="https://feimosi.github.io/baguetteBox.js/">baguetteBox.js</a>, <a href="https://atomiks.github.io/tippyjs/">tippy.js</a> © <a href="/">Igordos</a></footer>
+		<footer>Использованы скрипты: <a href="https://fancyapps.com/fancybox/">Fancybox</a>, <a href="https://atomiks.github.io/tippyjs/">tippy.js</a> © <a href="/">Igordos</a></footer>
 	<!-- tippy.js -->
 	<script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>

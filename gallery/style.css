@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
