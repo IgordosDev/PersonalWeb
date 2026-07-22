@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+:root {
+    --blessyou-hidden-display: none
+}
+
 body {
     justify-content: center;
     align-items: center;
@@ -72,4 +76,8 @@ i {
         filter: none;
         };
         transition: 100ms eace
-    } /* спасибо @kaoshipaws */
+} /* спасибо @kaoshipaws */
+
+.blessyou-hidden {
+    display: var(--blessyou-hidden-display) !important;
+}
