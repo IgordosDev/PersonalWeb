@@ -76,8 +76,8 @@ i {
         filter: none;
         };
         transition: 100ms eace
-} /* спасибо @kaoshipaws */
+}
 
 .blessyou-hidden {
-    display: var(--blessyou-hidden-display) !important;
+    display: var(--blessyou-hidden-display, revert) !important;
 }
